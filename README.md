@@ -97,23 +97,14 @@ Now the final steps to get things up and running, all of this is done from a com
 **Important note:** If you are using **Raspberry Pi OS "Bullseye"**, the main graphics backend for the OS has changed from dispmanx to DRM, and you need to follow these steps instead of just running `make`:
 * First run `sudo apt-get install libdrm-dev libegl1-mesa-dev libgles2-mesa-dev libgbm-dev` to install the DRM OpenGL/ES libraries, which are for some reason not included with the distro by default. These are necessary to link the graphics output library (raylib).
 * Then finally, run `make PLATFORM=PI3_BULLSEYE` for the emulator to compile successfully.
+* Firmware Install: 
+You will need to install the basic PiStomX firmware on the PiStorm hardware from the repo below before running the emulator.
+https://github.com/Frimples/PiStorm-Firmware
 
-Next up, follow the steps for installing the FPGA bitstream update below. (Scroll down.)
-
-If you are running the PiStorm in an Amiga computer, you can start the emulator with a basic default Amiga config by typing `sudo ./emulator --config amiga.cfg`.  
-In addition, the emulator will attempt to load a file called `default.cfg` if no config file is specified on the command line, so if you wish for the emulator to start up with for instance the basic default Amiga config, you can copy `amiga.cfg` to `default.cfg`.  
-**Important note:** Try not to edit the sample config files such as `amiga.cfg`, always save them under a different name, for instance one directory level below the `pistorm` directory.  
-One way to do this would be to copy for instance `amiga.cfg` like this: `cp ./amiga.cfg ../amiga.cfg` and then running the emulator using `sudo ./emulator --config ../amiga.cfg`. This way, you will never have any problems using `git pull` to update your PiStorm repo to the latest commit.
+If you are running the PiStorm on a Macintosh SE computer, copy the default.cfg and macse.rom files from platforms/macse to the root PiStorm directory. You can start the emulator by typing `sudo ./emulator` on the command line.
 
 To exit the emulator you can press `Ctrl+C` (on the keyboard or over SSH) or press `Q` on the keyboard connected to the Raspberry Pi.
 
-For Amiga, there is currently no Gayle or IDE controller emulation available, but PiSCSI can now autoboot RDB/RDSK hard drive images (and physical drives), with Kickstart 2.0 and up. Check out the readme in `platforms/amiga/piscsi` for more detailed information.
+For Macintosh SE, there is currently no SCSI Hard Drive support, floppy drives are supported, but at this time floppy disk images are not.
 
-# CPLD bitstream update :
 
-Install OpenOCD:
-`sudo apt-get install openocd`
-
-Run the CPLD update with `./flash.sh`, this will automatically detect your CPLD version and flash appropriately.
-
-If successful "Flashing successful!" will appear, if not it will fail with "Flashing failed" and `nprog_log.txt` will be created with more details.
