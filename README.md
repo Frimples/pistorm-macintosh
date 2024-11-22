@@ -20,7 +20,7 @@ I have added support files under platforms/macse
 
 Put the default.cfg and macse.rom files in the root PiStorm directory.
 
-The startup disk image and benchmarking disk image (SpeedoMeter) will need to either be written to a real floppies or used a floppy emulator like the one from BMOW:
+The startup disk image and benchmarking disk image (SpeedoMeter) will need to either be written to real floppies or used a floppy emulator like the one from BMOW (only the startup disk is needed to boot):
 
 https://shop.bigmessowires.com/products/floppy-emu-model-c-bundle
 
