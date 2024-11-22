@@ -2,6 +2,20 @@
 
 ![logo](media/pistorm_banner.jpg)
 
+# Macintosh SE Specific
+
+This is a new fork of the original PiStorm Repo specifically for the Macintosh SE.  Other Macintosh models may be added as test machines and testers become available.
+
+As of now I have the PiStorm installed in a stock Macintosh SE with an 800k floppy controller.
+
+I desoldered and socketed to main 68000 CPU Socket and was able to re-install the original CPU and run the computer normally.
+
+I have installed a Raspberry Pi 3A+ and the PiStorm board in the computer socket and been able to boot from the floppy into System 6.0.8 with working video and sound.
+
+I have a video showing the computer booting and running a game:
+
+https://youtu.be/CYlBzn_0kOY
+
 # Join us on Discord or on Libera Chat IRC #PiStorm
 
 * There's a Discord server dedicated to PiStorm discussion and development, which you can join through this handy invite link: https://discord.com/invite/j6rPtzxaNW
