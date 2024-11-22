@@ -18,6 +18,12 @@ I have a video showing the computer booting and running a game:
 
 https://youtu.be/CYlBzn_0kOY
 
+The current stock firmware for the PiStorm has video issues with the Macintosh SE.
+
+Install the basic PiStormX firmware for the PiStorm after installing the emulator.
+
+https://github.com/Frimples/PiStorm-Firmware
+
 I have added support files under platforms/macse
 
 Put the default.cfg and macse.rom files in the root PiStorm directory.
