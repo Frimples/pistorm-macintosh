@@ -2,36 +2,6 @@
 
 ![logo](media/pistorm_banner.jpg)
 
-# Macintosh SE Specific
-
-This is a new fork of the original PiStorm Repo specifically for the Macintosh SE.  Other Macintosh models may be added as test machines and testers become available.
-
-As of now I have the PiStorm installed in a stock Macintosh SE with an 800k floppy controller.
-
-I desoldered and socketed to main 68000 CPU Socket and was able to re-install the original CPU and run the computer normally.
-
-I have installed a Raspberry Pi 3A+ and the PiStorm board in the computer socket and been able to boot from the floppy into System 6.0.8 with working video and sound.
-
-The SCSI system is not working and no hard drives are detected at this time.
-
-I have a video showing the computer booting and running a game:
-
-https://youtu.be/CYlBzn_0kOY
-
-The current stock firmware for the PiStorm has video issues with the Macintosh SE.
-
-Install the basic PiStormX firmware for the PiStorm after installing the emulator.
-
-https://github.com/Frimples/PiStorm-Firmware
-
-I have added support files under platforms/macse
-
-Put the default.cfg and macse.rom files in the root PiStorm directory.
-
-The startup disk image and benchmarking disk image (SpeedoMeter) will need to either be written to real floppies or used a floppy emulator like the one from BMOW (only the startup disk is needed to boot):
-
-https://shop.bigmessowires.com/products/floppy-emu-model-c-bundle
-
 # Join us on Discord or on Libera Chat IRC #PiStorm
 
 * There's a Discord server dedicated to PiStorm discussion and development, which you can join through this handy invite link: https://discord.com/invite/j6rPtzxaNW
@@ -63,15 +33,35 @@ https://shop.bigmessowires.com/products/floppy-emu-model-c-bundle
   * The letter N in C5**N** signifies that the device is RoHS compliant. If you do not require an RoHS compliant device for your board, the one with no N can also be used.
   * While the **GT** variant of the EPM240 (for instance `EPM240GT100I5N`) does work, this requires some changes to the components you populate the board with, please inquire on Discord or IRC for detailed information.
 
-# Amiga-specific functionality
+# Macintosh SE Specific
 
-Since much of the initial work and testing for the PiStorm was done on Amiga computers, a number of extended features are available when the PiStorm is paired with for instance an Amiga 500:
-* Kickstart ROM mapping: 1.3, 2.0, 3.1, anything you might own and have dumped in a byteswapped format. Extended ROM mapping as well for instance with the CDTV extended BIOS.
-  * An A1200 3.1+ Kickstart ROM is currently recommended, as this one has the most dynamic automatic configuration on boot.
-* Fast RAM: Z2, Z3 and CPU local Fast can be mapped for high performance memory available to the CPU only on the PiStorm side of things.
-* Virtual SCSI: PiSCSI, a high performance virtual SCSI interface for mapping raw RDB disk images or physical storage devices connected to the Pi for use on the Amiga.
-* RTG: PiGFX, a virtual RTG board with almost all P96-supported functionality supported and accelerated.
-* Some other things: Most likely I forgot something while writing this, but someone will probably tell me about it.
+This is a new fork of the original PiStorm Repo specifically for the Macintosh SE.  Other Macintosh models may be added as test machines and testers become available.
+
+As of now I have the PiStorm installed in a stock Macintosh SE with an 800k floppy controller.
+
+I desoldered and socketed to main 68000 CPU Socket and was able to re-install the original CPU and run the computer normally.
+
+I have installed a Raspberry Pi 3A+ and the PiStorm board in the computer socket and been able to boot from the floppy into System 6.0.8 with working video and sound.
+
+The SCSI system is not working and no hard drives are detected at this time.
+
+I have a video showing the computer booting and running a game:
+
+https://youtu.be/CYlBzn_0kOY
+
+The current stock firmware for the PiStorm has video issues with the Macintosh SE.
+
+Install the basic PiStormX firmware for the PiStorm after installing the emulator.
+
+https://github.com/Frimples/PiStorm-Firmware
+
+I have added support files under platforms/macse
+
+Put the default.cfg and macse.rom files in the root PiStorm directory.
+
+The startup disk image and benchmarking disk image (SpeedoMeter) will need to either be written to real floppies or used a floppy emulator like the one from BMOW (only the startup disk is needed to boot):
+
+https://shop.bigmessowires.com/products/floppy-emu-model-c-bundle
 
 # Simple quickstart
 
