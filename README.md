@@ -12,6 +12,8 @@ I desoldered and socketed to main 68000 CPU Socket and was able to re-install th
 
 I have installed a Raspberry Pi 3A+ and the PiStorm board in the computer socket and been able to boot from the floppy into System 6.0.8 with working video and sound.
 
+The SCSI system is not working and no hard drives are detected at this time.
+
 I have a video showing the computer booting and running a game:
 
 https://youtu.be/CYlBzn_0kOY
