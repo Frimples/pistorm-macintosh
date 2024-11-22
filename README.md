@@ -22,6 +22,7 @@ https://youtu.be/CYlBzn_0kOY
 * There are also IRC channels on the Libera IRC network (irc.libera.chat):
   * `#PiStorm`, bridged with the `#general` channel on Discord, `#PiStorm-hardware` which is bridged with `#hardware`, `#PiStorm-firmware`, bridged with `#firmware`,
   * `#PiStorm-Amiga` bridged with `#software-amiga`, `#PiStorm-pi`, brigded with `#software-pi` and `#PiStorm-chat`, bridged with `#ot-and-chitchat`.
+  * #macintosh is available on the Discord specifically for hardware and software development and is not a general chat group.  Please only request information on technical questions in this group.
 
 * **IMPORTANT NOTE: Selling blank or complete PCBs or derivatives on eBay or elsewhere for excessive profit is frowned upon and may lead to forthcoming related projects being closed source.**
 * Even with the current global chip shortage (October 2021), components are not **so** expensive that you should pay up to a hundred dollars or Euros for a board.
