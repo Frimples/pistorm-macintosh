@@ -1,6 +1,6 @@
 # PiStorm
 
-![logo](media/pistorm_banner.jpg)
+![logo](media/pistorm_banner_macintosh.png)
 
 # Join us on Discord or on Libera Chat IRC #PiStorm
 
