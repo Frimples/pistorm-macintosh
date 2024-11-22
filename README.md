@@ -16,6 +16,14 @@ I have a video showing the computer booting and running a game:
 
 https://youtu.be/CYlBzn_0kOY
 
+I have added support files under platforms/macse
+
+Put the default.cfg and macse.rom files in the root PiStorm directory.
+
+The startup disk image and benchmarking disk image (SpeedoMeter) will need to either be written to a real floppies or used a floppy emulator like the one from BMOW:
+
+https://shop.bigmessowires.com/products/floppy-emu-model-c-bundle
+
 # Join us on Discord or on Libera Chat IRC #PiStorm
 
 * There's a Discord server dedicated to PiStorm discussion and development, which you can join through this handy invite link: https://discord.com/invite/j6rPtzxaNW
