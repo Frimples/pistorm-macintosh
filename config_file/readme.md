@@ -60,7 +60,6 @@ Example: `platform amiga`
 This commands specifies which platform to target with the current emulator config file, valid options are currently:
 * `none` - A generic non-specific platform. Has no custom `setvar` or mapped range handling outside of mapping RAM/ROM ranges.
 * `amiga` - The Amiga computer platform, includes a bunch of optional functionality through `setvar` commands.
-* `mac68k` - Mac 68k or Mac Classic, at the moment mostly a skeleton platform with some Mac-specific functionality added.
 * `x68000` - Skeleton driver for the X68000 line of computers, the sample config file includes some common mapped RAM/ROM ranges, but none of it currently works.
 The `SUB_SYSTEM` argument can be used to indicate a specific computer model where mapped register ranges may be different from other systems of the same family, for instance `platform amiga 4000` uses a different address range than other models for the IDE controller.  
 **Note:** The `SUB_SYSTEM` argument is currently not used for much of anything, and there is no point in setting it to anything unless you know you really need it.
